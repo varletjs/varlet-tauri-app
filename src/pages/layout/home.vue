@@ -13,7 +13,6 @@
     <template #bottom-bar>
       <div class="space-x-3">
         <var-button
-          class="bg-hsl-primary/20!"
           type="primary"
           round
           icon-container
@@ -22,7 +21,6 @@
           <var-icon name="plus" />
         </var-button>
         <var-button
-          class="bg-hsl-info/20!"
           type="info"
           round
           icon-container
@@ -31,7 +29,6 @@
           <var-icon name="information" />
         </var-button>
         <var-button
-          class="bg-hsl-success/20!"
           type="success"
           round
           icon-container
@@ -40,7 +37,6 @@
           <var-icon name="check" />
         </var-button>
         <var-button
-          class="bg-hsl-warning/20!"
           type="warning"
           round
           icon-container
@@ -49,7 +45,6 @@
           <var-icon name="warning" />
         </var-button>
         <var-button
-          class="bg-hsl-danger/20!"
           type="danger"
           round
           icon-container
