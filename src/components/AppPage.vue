@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative min-h-screen"
+    class="min-h-screen pt-[calc(var(--app-bar-height)+1px)] sm:pt-0"
     :class="{ 'pb-[var(--app-bar-height)]': $slots['bottom-bar'] }"
   >
     <slot />
