@@ -8,4 +8,8 @@ import '@/styles/global.less'
 import 'virtual:uno.css'
 import 'virtual-icons'
 
+LoadingBar.setDefaultOptions({
+  finishDelay: 250,
+})
+
 createApp(App).use(router).mount('#app')

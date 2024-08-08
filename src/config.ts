@@ -1,6 +1,8 @@
 import { z } from 'zod'
+import logo from '@/assets/images/logo.png'
 
 const ConfigSchema = z.object({
+  logo: z.string(),
   sidebar: z.object({
     items: z.array(
       z.object({
@@ -8,6 +10,7 @@ const ConfigSchema = z.object({
         path: z.string(),
         iconName: z.string(),
         iconNamespace: z.string().optional(),
+        tooltip: z.string().optional(),
       })
     ),
     account: z.object({
@@ -24,17 +27,20 @@ const ConfigSchema = z.object({
 export type Config = z.infer<typeof ConfigSchema>
 
 export const config = ConfigSchema.parse({
+  logo,
   sidebar: {
     items: [
       {
         label: 'Home',
         path: '/layout/home',
         iconName: 'home',
+        tooltip: 'Home Tooltip'
       },
       {
         label: 'Setting',
         path: '/layout/setting',
         iconName: 'cog',
+        tooltip: 'Setting Tooltip'
       },
     ],
     account: {

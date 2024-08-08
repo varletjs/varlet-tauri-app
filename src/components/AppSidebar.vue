@@ -17,17 +17,20 @@ function handleAccountChange(value: string) {
 
 <template>
   <div
-    class="sticky flex flex-col top-0 py-2 justify-between items-center px-2 w-22 h-screen bg-surface-container"
+    class="sticky flex-col flex-shrink-0! top-0 py-2 items-center justify-between px-2 hidden! sm:flex! overflow-hidden w-22 h-screen bg-surface-container"
   >
-    <div class="flex flex-col items-center space-y-2 w-full overflow-auto">
-      <app-sidebar-item
-        v-for="item in config.sidebar.items"
-        :key="item.path"
-        :path="item.path"
-        :label="item.label"
-        :icon-name="item.iconName"
-        :icon-namespace="item.iconNamespace"
-      />
+    <div class="w-full space-y-2">
+      <app-logo />
+
+      <div
+        class="flex flex-col items-center space-y-2 overflow-auto pb-2 max-h-[calc(100vh-158px)]"
+      >
+        <app-sidebar-item
+          v-for="item in config.sidebar.items"
+          :key="item.path"
+          v-bind="item"
+        />
+      </div>
     </div>
 
     <div class="w-full">

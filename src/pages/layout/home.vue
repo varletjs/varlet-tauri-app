@@ -3,7 +3,61 @@
     <app-page-header title="Home" description="This is the home page" />
 
     <app-page-content>
-      <h1>asdasdsa</h1>
+      <div class="grid lg:grid-cols-4 gap-20px">
+        <var-card v-for="i in 20" :key="i">
+          <div>Item</div>
+        </var-card>
+      </div>
     </app-page-content>
+
+    <template #bottom-bar>
+      <div class="space-x-3">
+        <var-button
+          class="bg-hsl-primary/20!"
+          type="primary"
+          round
+          icon-container
+          :elevation="0"
+        >
+          <var-icon name="plus" />
+        </var-button>
+        <var-button
+          class="bg-hsl-info/20!"
+          type="info"
+          round
+          icon-container
+          :elevation="0"
+        >
+          <var-icon name="information" />
+        </var-button>
+        <var-button
+          class="bg-hsl-success/20!"
+          type="success"
+          round
+          icon-container
+          :elevation="0"
+        >
+          <var-icon name="check" />
+        </var-button>
+        <var-button
+          class="bg-hsl-warning/20!"
+          type="warning"
+          round
+          icon-container
+          :elevation="0"
+        >
+          <var-icon name="warning" />
+        </var-button>
+        <var-button
+          class="bg-hsl-danger/20!"
+          type="danger"
+          round
+          icon-container
+          :elevation="0"
+        >
+          <var-icon name="window-close" />
+        </var-button>
+      </div>
+    </template>
   </app-page>
 </template>

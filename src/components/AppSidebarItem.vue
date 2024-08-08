@@ -4,6 +4,7 @@ defineProps<{
   path: string
   iconName: string
   iconNamespace?: string
+  tooltip?: string
 }>()
 
 const route = useRoute()
@@ -11,19 +12,27 @@ const route = useRoute()
 
 <template>
   <router-link class="w-full block" :to="path">
-    <var-button
-      class="rounded-2! h-17! w-full"
-      :class="{ 'text-primary! bg-hsl-primary/25!': route.path === path }"
-      text
+    <var-tooltip
+      class="w-full"
+      placement="right"
+      :content="tooltip"
+      :disabled="!tooltip"
     >
-      <div class="flex flex-col space-y-2">
-        <var-icon
-          class="text-5xl!"
-          :namespace="iconNamespace"
-          :name="iconName"
-        />
-        <span class="text-md">{{ label }}</span>
-      </div>
-    </var-button>
+      <var-button
+        class="rounded-2! h-17! w-full"
+        :focusable="false"
+        :class="{ 'text-primary! bg-hsl-primary/20!': route.path === path }"
+        text
+      >
+        <div class="flex flex-col space-y-2">
+          <var-icon
+            class="text-5xl!"
+            :namespace="iconNamespace"
+            :name="iconName"
+          />
+          <span class="text-md">{{ label }}</span>
+        </div>
+      </var-button>
+    </var-tooltip>
   </router-link>
 </template>

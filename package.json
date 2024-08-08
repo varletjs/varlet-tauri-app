@@ -15,7 +15,7 @@
     "@varlet/axle": "^0.7.1",
     "@varlet/shared": "^3.3.12",
     "@varlet/touch-emulator": "^3.3.12",
-    "@varlet/ui": "^3.3.12",
+    "@varlet/ui": "3.3.13-alpha.1723094901591",
     "mitt": "^3.0.1",
     "vue": "^3.4.36",
     "vue-router": "^4.4.3",
