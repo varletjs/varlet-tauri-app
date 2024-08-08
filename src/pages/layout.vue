@@ -1,6 +1,6 @@
 <template>
-  <div class="flex items-start relative">
-    <div class="hidden sm:block">
+  <div class="flex items-start">
+    <div class="sticky top-0 hidden sm:block">
       <app-sidebar />
     </div>
 

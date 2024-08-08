@@ -17,7 +17,7 @@ function handleAccountChange(value: string) {
 
 <template>
   <div
-    class="sticky flex-col flex-shrink-0! top-0 py-2 items-center justify-between px-2 flex overflow-hidden w-22 h-screen bg-surface-container"
+    class="flex-col flex-shrink-0! py-2 items-center justify-between px-2 flex overflow-hidden w-22 h-screen bg-surface-container"
   >
     <div class="w-full space-y-2">
       <app-logo />
