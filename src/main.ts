@@ -12,4 +12,5 @@ LoadingBar.setDefaultOptions({
   finishDelay: 250,
 })
 
+
 createApp(App).use(router).mount('#app')

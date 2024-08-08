@@ -6,7 +6,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="w-full sticky top-[var(--app-bar-height)] sm:top-0">
+  <div class="w-full sticky top-[var(--app-bar-height)] sm:top-0 z-1">
     <var-style-provider :style-vars="{ '--app-bar-height': '0' }">
       <var-app-bar class="bg-body! text-text!" :elevation="0" border>
         <template #content>

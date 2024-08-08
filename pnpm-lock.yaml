@@ -21,8 +21,14 @@ importers:
         specifier: ^3.3.12
         version: 3.3.12
       '@varlet/ui':
-        specifier: 3.3.13-alpha.1723100749009
-        version: 3.3.13-alpha.1723100749009(vue@3.4.36(typescript@5.5.4))
+        specifier: 3.3.13-alpha.1723128108194
+        version: 3.3.13-alpha.1723128108194(vue@3.4.36(typescript@5.5.4))
+      '@vueuse/core':
+        specifier: ^10.11.0
+        version: 10.11.0(vue@3.4.36(typescript@5.5.4))
+      echarts:
+        specifier: ^5.5.1
+        version: 5.5.1
       mitt:
         specifier: ^3.0.1
         version: 3.0.1
@@ -65,7 +71,7 @@ importers:
         version: 0.58.9(postcss@8.4.40)(rollup@4.20.0)(vite@5.3.5(@types/node@20.14.14)(less@4.2.0))
       unplugin-auto-import:
         specifier: ^0.17.5
-        version: 0.17.8(rollup@4.20.0)
+        version: 0.17.8(@vueuse/core@10.11.0(vue@3.4.36(typescript@5.5.4)))(rollup@4.20.0)
       unplugin-vue-components:
         specifier: ^0.26.0
         version: 0.26.0(@babel/parser@7.25.3)(rollup@4.20.0)(vue@3.4.36(typescript@5.5.4))
@@ -568,6 +574,9 @@ packages:
   '@types/node@20.14.14':
     resolution: {integrity: sha512-d64f00982fS9YoOgJkAMolK7MN8Iq3TDdVjchbYHdEmjth/DHowx82GnoA+tVUAN+7vxfYUgAzi+JXbKNd2SDQ==}
 
+  '@types/web-bluetooth@0.0.20':
+    resolution: {integrity: sha512-g9gZnnXVq7gM7v3tJCWV/qw7w+KeOlSHAhgF9RytFyifW6AF61hdT2ucrYhPq9hLs5JIryeupHV3qGk95dH9ow==}
+
   '@unocss/astro@0.58.9':
     resolution: {integrity: sha512-VWfHNC0EfawFxLfb3uI+QcMGBN+ju+BYtutzeZTjilLKj31X2UpqIh8fepixL6ljgZzB3fweqg2xtUMC0gMnoQ==}
     peerDependencies:
@@ -663,8 +672,8 @@ packages:
     resolution: {integrity: sha512-39v+6lW20M6mY6sbID+dMlVcb8iSo0YPDCpVNoF7WItaMzSNu8ttAjzhH/MmiRV7jUQUILm3dycqNTPs+Wuh7Q==}
     hasBin: true
 
-  '@varlet/icons@3.3.13-alpha.1723100749009':
-    resolution: {integrity: sha512-xssQp1rRK9e9flPdbmq8zdk1DvQu++2K1HDqOkbcF2Ukqr5hrf0dSX+AHoZxdR5plNMTHwUzfSxfVzmUTdUbmQ==}
+  '@varlet/icons@3.3.13-alpha.1723128108194':
+    resolution: {integrity: sha512-xAmOJktNca4/sUEzeSkf6sqacQ0oFyRGuvrAvS4bZhyQRERYNEWtOmx7KtyEuNCtABPA4/Ijdksdspnd+/zfuA==}
 
   '@varlet/import-resolver@3.3.12':
     resolution: {integrity: sha512-NKOr2W3xK8inBj7SC2GOCTOF1psUIFaCkhQDglTQT1Om0ZhH0BSMdGSosJuOZmnkShHuey8RSbQzLCTEiw4rxQ==}
@@ -683,14 +692,14 @@ packages:
   '@varlet/shared@3.3.12':
     resolution: {integrity: sha512-YebUqdv3RgM1mhsTltq3BBTJ830MR0u0mcwJzqnFfl7WIs4q8KRfDFAUfQFv28OYyyW48+gl4Rrp7isCteA55A==}
 
-  '@varlet/shared@3.3.13-alpha.1723100749009':
-    resolution: {integrity: sha512-sPaV0DfUo8uMiDbm9OQM5ohZoJeOKcETF5dtebLZkHnOPaS8fg+cJ5gtP9J4XdKnP853G6XNshNJjjfA9t7bTQ==}
+  '@varlet/shared@3.3.13-alpha.1723128108194':
+    resolution: {integrity: sha512-GqNnfwfo4bozd+08lRL9meU/8/idlXZI3ulMyVaQtuf/uBiYVKmFwnPPTWOlN7rWsbiqnjI9ouNNTd1iPFvHCw==}
 
   '@varlet/touch-emulator@3.3.12':
     resolution: {integrity: sha512-wnHNrwReG+oqw89w2+TCqn+ZKzvmvsJD18IUA8eUO/K22RE1ie6EGWIEHmR/2+7GEp9OnE7lHzEixq30wYKBHg==}
 
-  '@varlet/ui@3.3.13-alpha.1723100749009':
-    resolution: {integrity: sha512-JhxmZU9YT/ibZ00YEDJ0r5kUACIPEGE+v8Ul3KTsG9/MVqrkUqaEicY+2GSnJWI916hoqcVTCAUXWSPrYR+IJw==}
+  '@varlet/ui@3.3.13-alpha.1723128108194':
+    resolution: {integrity: sha512-8GzFMNX3Prebt0gCgoJ6iWWxgIeWLhDIYEB+sJCXRBaHpQoObWqaNZVp2rPm8EthzuENaI2J7tQjucAWiJMmKQ==}
     peerDependencies:
       vue: ^3.2.0
 
@@ -706,8 +715,8 @@ packages:
       webpack:
         optional: true
 
-  '@varlet/use@3.3.13-alpha.1723100749009':
-    resolution: {integrity: sha512-1cTdZpKkOw0yEH0yg1Qof/eGDdQLDzdMvnHGhHUhNvXdHzI+7wWZuvb9T9+FbbtcjDETxthsNoKU5k6jrvJ5WQ==}
+  '@varlet/use@3.3.13-alpha.1723128108194':
+    resolution: {integrity: sha512-jNQclI/kjyMBgdTzWUlMhuQmdkgffMXss7T8dHL82QLdsIHZW+2WeqJNcC30OmdxO4kET1XORbYIXzKkaq5Diw==}
     peerDependencies:
       vue: ^3.2.0
 
@@ -796,6 +805,15 @@ packages:
 
   '@vue/shared@3.4.36':
     resolution: {integrity: sha512-fdPLStwl1sDfYuUftBaUVn2pIrVFDASYerZSrlBvVBfylObPA1gtcWJHy5Ox8jLEJ524zBibss488Q3SZtU1uA==}
+
+  '@vueuse/core@10.11.0':
+    resolution: {integrity: sha512-x3sD4Mkm7PJ+pcq3HX8PLPBadXCAlSDR/waK87dz0gQE+qJnaaFhc/dZVfJz+IUYzTMVGum2QlR7ImiJQN4s6g==}
+
+  '@vueuse/metadata@10.11.0':
+    resolution: {integrity: sha512-kQX7l6l8dVWNqlqyN3ePW3KmjCQO3ZMgXuBMddIu83CmucrsBfXlH+JoviYyRBws/yLTQO8g3Pbw+bdIoVm4oQ==}
+
+  '@vueuse/shared@10.11.0':
+    resolution: {integrity: sha512-fyNoIXEq3PfX1L3NkNhtVQUSRtqYwJtJg+Bp9rIzculIZWHTkKSysujrOk2J+NrRulLTQH9+3gGSfYLWSEWU1A==}
 
   '@xmldom/xmldom@0.7.13':
     resolution: {integrity: sha512-lm2GW5PkosIzccsaZIz7tp8cPADSIlIHWDFTR1N0SzfinhhYgeIQjFMz4rYzanCScr3DqQLeomUDArp6MWKm+g==}
@@ -978,6 +996,9 @@ packages:
 
   duplexer@0.1.2:
     resolution: {integrity: sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==}
+
+  echarts@5.5.1:
+    resolution: {integrity: sha512-Fce8upazaAXUVUVsjgV6mBnGuqgO+JNDlcgF79Dksy4+wgGpQB2lmYoO4TSweFg/mZITdpGHomw/cNBJZj1icA==}
 
   electron-to-chromium@1.5.5:
     resolution: {integrity: sha512-QR7/A7ZkMS8tZuoftC/jfqNkZLQO779SSW3YuZHP4eXpj3EffGLFcB/Xu9AAZQzLccTiCV+EmUo3ha4mQ9wnlA==}
@@ -1561,6 +1582,9 @@ packages:
     resolution: {integrity: sha512-sf4i37nQ2LBx4m3wB74y+ubopq6W/dIzXg0FDGjsYnZHVa1Da8FH853wlL2gtUhg+xJXjfk3kUZS3BRoQeoQBQ==}
     engines: {node: '>=6'}
 
+  tslib@2.3.0:
+    resolution: {integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==}
+
   tslib@2.6.3:
     resolution: {integrity: sha512-xNvxJEOUiWPGhUuUdQgAJPKOOJfGnIyKySOc09XkKsgdUV/3E2zvwZYdejjmRgPCgcym1juLH3226yA7sEFJKQ==}
 
@@ -1679,6 +1703,17 @@ packages:
   vscode-uri@3.0.8:
     resolution: {integrity: sha512-AyFQ0EVmsOZOlAnxoFOGOq1SQDWAB7C6aqMGS23svWAllfOaxbuFvcT8D1i8z3Gyn8fraVeZNNmN6e9bxxXkKw==}
 
+  vue-demi@0.14.10:
+    resolution: {integrity: sha512-nMZBOwuzabUO0nLgIcc6rycZEebF6eeUfaiQx9+WSk8e29IbLvPU9feI6tqW4kTo3hvoYAJkMh8n8D0fuISphg==}
+    engines: {node: '>=12'}
+    hasBin: true
+    peerDependencies:
+      '@vue/composition-api': ^1.0.0-rc.1
+      vue: ^3.0.0-0 || ^2.6.0
+    peerDependenciesMeta:
+      '@vue/composition-api':
+        optional: true
+
   vue-router@4.4.3:
     resolution: {integrity: sha512-sv6wmNKx2j3aqJQDMxLFzs/u/mjA9Z5LCgy6BE0f7yFWMjrPLnS/sPNn8ARY/FXw6byV18EFutn5lTO6+UsV5A==}
     peerDependencies:
@@ -1735,6 +1770,9 @@ packages:
 
   zod@3.23.8:
     resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==}
+
+  zrender@5.6.0:
+    resolution: {integrity: sha512-uzgraf4njmmHAbEUxMJ8Oxg+P3fT04O+9p7gY+wJRVxo8Ge+KmYv0WJev945EH4wFuc4OY2NLXz46FZrWS9xJg==}
 
 snapshots:
 
@@ -2172,6 +2210,8 @@ snapshots:
     dependencies:
       undici-types: 5.26.5
 
+  '@types/web-bluetooth@0.0.20': {}
+
   '@unocss/astro@0.58.9(rollup@4.20.0)(vite@5.3.5(@types/node@20.14.14)(less@4.2.0))':
     dependencies:
       '@unocss/core': 0.58.9
@@ -2355,7 +2395,7 @@ snapshots:
       - debug
       - vue
 
-  '@varlet/icons@3.3.13-alpha.1723100749009': {}
+  '@varlet/icons@3.3.13-alpha.1723128108194': {}
 
   '@varlet/import-resolver@3.3.12':
     dependencies:
@@ -2371,16 +2411,16 @@ snapshots:
 
   '@varlet/shared@3.3.12': {}
 
-  '@varlet/shared@3.3.13-alpha.1723100749009': {}
+  '@varlet/shared@3.3.13-alpha.1723128108194': {}
 
   '@varlet/touch-emulator@3.3.12': {}
 
-  '@varlet/ui@3.3.13-alpha.1723100749009(vue@3.4.36(typescript@5.5.4))':
+  '@varlet/ui@3.3.13-alpha.1723128108194(vue@3.4.36(typescript@5.5.4))':
     dependencies:
       '@popperjs/core': 2.11.8
-      '@varlet/icons': 3.3.13-alpha.1723100749009
-      '@varlet/shared': 3.3.13-alpha.1723100749009
-      '@varlet/use': 3.3.13-alpha.1723100749009(vue@3.4.36(typescript@5.5.4))
+      '@varlet/icons': 3.3.13-alpha.1723128108194
+      '@varlet/shared': 3.3.13-alpha.1723128108194
+      '@varlet/use': 3.3.13-alpha.1723128108194(vue@3.4.36(typescript@5.5.4))
       dayjs: 1.11.12
       decimal.js: 10.4.3
       vue: 3.4.36(typescript@5.5.4)
@@ -2400,9 +2440,9 @@ snapshots:
       - debug
       - vue
 
-  '@varlet/use@3.3.13-alpha.1723100749009(vue@3.4.36(typescript@5.5.4))':
+  '@varlet/use@3.3.13-alpha.1723128108194(vue@3.4.36(typescript@5.5.4))':
     dependencies:
-      '@varlet/shared': 3.3.13-alpha.1723100749009
+      '@varlet/shared': 3.3.13-alpha.1723128108194
       vue: 3.4.36(typescript@5.5.4)
 
   '@varlet/webfont@0.0.9':
@@ -2550,6 +2590,25 @@ snapshots:
   '@vue/shared@3.4.35': {}
 
   '@vue/shared@3.4.36': {}
+
+  '@vueuse/core@10.11.0(vue@3.4.36(typescript@5.5.4))':
+    dependencies:
+      '@types/web-bluetooth': 0.0.20
+      '@vueuse/metadata': 10.11.0
+      '@vueuse/shared': 10.11.0(vue@3.4.36(typescript@5.5.4))
+      vue-demi: 0.14.10(vue@3.4.36(typescript@5.5.4))
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
+
+  '@vueuse/metadata@10.11.0': {}
+
+  '@vueuse/shared@10.11.0(vue@3.4.36(typescript@5.5.4))':
+    dependencies:
+      vue-demi: 0.14.10(vue@3.4.36(typescript@5.5.4))
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - vue
 
   '@xmldom/xmldom@0.7.13': {}
 
@@ -2723,6 +2782,11 @@ snapshots:
       path-type: 4.0.0
 
   duplexer@0.1.2: {}
+
+  echarts@5.5.1:
+    dependencies:
+      tslib: 2.3.0
+      zrender: 5.6.0
 
   electron-to-chromium@1.5.5: {}
 
@@ -3299,6 +3363,8 @@ snapshots:
 
   totalist@3.0.1: {}
 
+  tslib@2.3.0: {}
+
   tslib@2.6.3: {}
 
   typescript@5.5.4: {}
@@ -3362,7 +3428,7 @@ snapshots:
       - rollup
       - supports-color
 
-  unplugin-auto-import@0.17.8(rollup@4.20.0):
+  unplugin-auto-import@0.17.8(@vueuse/core@10.11.0(vue@3.4.36(typescript@5.5.4)))(rollup@4.20.0):
     dependencies:
       '@antfu/utils': 0.7.10
       '@rollup/pluginutils': 5.1.0(rollup@4.20.0)
@@ -3372,6 +3438,8 @@ snapshots:
       minimatch: 9.0.5
       unimport: 3.10.0(rollup@4.20.0)
       unplugin: 1.12.0
+    optionalDependencies:
+      '@vueuse/core': 10.11.0(vue@3.4.36(typescript@5.5.4))
     transitivePeerDependencies:
       - rollup
 
@@ -3446,6 +3514,10 @@ snapshots:
 
   vscode-uri@3.0.8: {}
 
+  vue-demi@0.14.10(vue@3.4.36(typescript@5.5.4)):
+    dependencies:
+      vue: 3.4.36(typescript@5.5.4)
+
   vue-router@4.4.3(vue@3.4.36(typescript@5.5.4)):
     dependencies:
       '@vue/devtools-api': 6.6.3
@@ -3492,3 +3564,7 @@ snapshots:
   yocto-queue@0.1.0: {}
 
   zod@3.23.8: {}
+
+  zrender@5.6.0:
+    dependencies:
+      tslib: 2.3.0
